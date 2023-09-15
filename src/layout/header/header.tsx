@@ -1,23 +1,23 @@
 'use client'
-import React,{useState} from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import menu_data from "@/data/menu-data";
 import logo from '@/assets/img/logo/logo.png';
 import useSticky from "@/hooks/use-sticky";
-import {usePathname} from 'next/navigation'
+import { usePathname } from 'next/navigation'
 import SearchPopup from "@/app/components/common/search-popup";
 import OffCanvas from "@/app/components/common/off-canvas";
 import MobileOffCanvas from "@/app/components/common/mobile-offcanvas";
 import SvgIconCom from "@/app/components/common/svg-icon-anim";
 import shape from '@/assets/img/icons/shape02.svg'
 
-const Header = ({style_2=false}:{style_2?:boolean}) => {
-  const {sticky,isStickyVisible} = useSticky();
+const Header = ({ style_2 = false }: { style_2?: boolean }) => {
+  const { sticky, isStickyVisible } = useSticky();
   const pathname = usePathname();
-  const [isSearchOpen,setIsSearchOpen] = useState<boolean>(false);
-  const [isOffCanvasOpen,setIsOffCanvasOpen] = useState<boolean>(false);
-  const [openMobileOffCanvas,setOpenMobileOffCanvas] = useState<boolean>(false);
+  const [isSearchOpen, setIsSearchOpen] = useState<boolean>(false);
+  const [isOffCanvasOpen, setIsOffCanvasOpen] = useState<boolean>(false);
+  const [openMobileOffCanvas, setOpenMobileOffCanvas] = useState<boolean>(false);
   // handle open search
   const handleOpenSearch = (audioPath: string) => {
     setIsSearchOpen(true)
@@ -38,7 +38,7 @@ const Header = ({style_2=false}:{style_2?:boolean}) => {
   };
   return (
     <header>
-      <div id="sticky-header" className={`tg-header__area transparent-header ${sticky?'tg-sticky-menu':''} ${isStickyVisible?'sticky-menu__show':''}`}>
+      <div id="sticky-header" className={`tg-header__area transparent-header ${sticky ? 'tg-sticky-menu' : ''} ${isStickyVisible ? 'sticky-menu__show' : ''}`}>
         <div className="container custom-container">
           <div className="row">
             <div className="col-12">
@@ -49,7 +49,7 @@ const Header = ({style_2=false}:{style_2?:boolean}) => {
                 <nav className="tgmenu__nav">
                   <div className="logo">
                     <Link href="/">
-                      <Image src={logo} alt="Logo" style={{height:'auto'}} />
+                      <Image src={logo} alt="Logo" style={{ height: 'auto' }} />
                     </Link>
                   </div>
                   <div className="tgmenu__navbar-wrap tgmenu__main-menu d-none d-xl-flex">
@@ -85,12 +85,12 @@ const Header = ({style_2=false}:{style_2?:boolean}) => {
                         </a>
                       </li>
                       <li className="header-btn">
-                        <Link href="/contact" className={`${style_2?'tg-btn-3 tg-svg':'tg-border-btn'}`}>
+                        <Link href="/contact" className={`${style_2 ? 'tg-btn-3 tg-svg' : 'tg-border-btn'}`}>
                           {style_2 && <SvgIconCom icon={shape} id="svg-2" />}
-                          <i className="flaticon-edit"></i> ~sing in
+                          <i className="flaticon-edit"></i> ~sign in
                         </Link>
                       </li>
-                      <li className="side-toggle-icon" onClick={()=> handleOpenOffCanvas('/assets/audio/click.wav')}>
+                      <li className="side-toggle-icon" onClick={() => handleOpenOffCanvas('/assets/audio/click.wav')}>
                         <span></span>
                         <span></span>
                         <span></span>

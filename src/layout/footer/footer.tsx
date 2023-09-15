@@ -59,18 +59,6 @@ const Footer = () => {
                 </ul>
               </div>
             </div>
-            <div className="col-xl-4 col-lg-5 col-md-7">
-              <div className="footer-widget">
-                <h4 className="fw-title">Newsletter</h4>
-                <div className="footer-newsletter">
-                  <p>Subscribe our newsletter to get our latest update & newsconsectetur</p>
-                  <form action="#" className="footer-newsletter-form">
-                    <input type="email" placeholder="Your email address" />
-                    <button type="submit"><i className="flaticon-paper-plane"></i></button>
-                  </form>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </div>
@@ -80,11 +68,6 @@ const Footer = () => {
             <div className="col-md-7">
               <div className="copyright__text">
                 <p>Copyright © {new Date().getFullYear()} - All Rights Reserved By <span>Mykd</span></p>
-              </div>
-            </div>
-            <div className="col-md-5">
-              <div className="copyright__card text-center text-md-end">
-                <Image src={payment} alt="img" />
               </div>
             </div>
           </div>
