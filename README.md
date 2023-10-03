@@ -15,7 +15,7 @@ pnpm dev
 To run the development server on a specific port:
 ```bash
 npm run dev -- --port [portnumber]
-# example npm run dev -- --port 8000
+# example: npm run dev -- --port 8000
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
@@ -39,5 +39,10 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 
-old color:#45f882
+```bash
+# Old color
+Color: #45f882
+# Current color
 Color: #07899d
+```
+
