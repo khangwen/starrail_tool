@@ -22,16 +22,8 @@ export default function RelicOptimizerPage() {
             {/* main area start */}
             <main className="main--area">
                 {/* breadcrumb area start */}
-                <BreadcrumbArea title="RELIC OPTIMiZER" subtitle="RELIC OPTIMIZER" bg={brd_bg} brd_img={brd_img} />
+                <BreadcrumbArea title="Work in Progress" subtitle="RELIC OPTIMIZER" bg={brd_bg} brd_img={brd_img} />
                 {/* breadcrumb area end */}
-
-                {/* tournament area start */}
-                <TournamentArea />
-                {/* tournament area end */}
-
-                {/* tournament list area start */}
-                <TournamentListArea />
-                {/* tournament list area end */}
 
             </main>
             {/* main area end */}

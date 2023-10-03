@@ -4,7 +4,7 @@ import Header from "@/layout/header/header";
 import Footer from "@/layout/footer/footer";
 import BreadcrumbArea from "../components/breadcrumb/breadcrumb-area";
 import brd_bg from '@/assets/img/bg/breadcrumb_bg03.jpg';
-import brd_img from '@/assets/img/others/breadcrumb_img03.png';
+import brd_img from '@/assets/img/others/breadcrumb_img04.png';
 import TournamentArea from "../components/tournaments/tournament-area";
 import TournamentListArea from "../components/tournaments/tournament-list-area";
 
@@ -22,16 +22,8 @@ export default function SimulatorPage() {
             {/* main area start */}
             <main className="main--area">
                 {/* breadcrumb area start */}
-                <BreadcrumbArea title="SIMULATOR" subtitle="SIMULATOR" bg={brd_bg} brd_img={brd_img} />
+                <BreadcrumbArea title="Work in Progress" subtitle="SIMULATOR" bg={brd_bg} brd_img={brd_img} />
                 {/* breadcrumb area end */}
-
-                {/* tournament area start */}
-                <TournamentArea />
-                {/* tournament area end */}
-
-                {/* tournament list area start */}
-                <TournamentListArea />
-                {/* tournament list area end */}
 
             </main>
             {/* main area end */}
