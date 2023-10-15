@@ -3,7 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "flask-dev": "pip3 install -r requirements.txt && python -m flask --app api/index run -p 5328",
+    "next-dev": "next dev",
+    "dev": "concurrently \"pnpm run next-dev\" \"pnpm run flask-dev\"",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
@@ -15,6 +17,7 @@
     "@types/react-dom": "18.2.6",
     "@types/vivus": "^0.4.4",
     "bootstrap": "^5.3.0",
+    "concurrently": "^8.0.1",
     "eslint": "8.44.0",
     "eslint-config-next": "13.4.9",
     "gsap": "^3.12.2",
