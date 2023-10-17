@@ -34,3 +34,4 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 api/__pycache__/index.cpython-39.pyc
+data/index
