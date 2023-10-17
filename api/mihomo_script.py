@@ -25,12 +25,14 @@ async def main():
     # If it is not called, index files will be downloaded when needed
     await api.ensure_index()
 
+    # no logo/image api endpoint exists, must retrieve manually
+
     # # The following shows how to get original api data
     # data_origin = await api.get_api_data("100114514")
     # print(data_origin)
 
     # This will return a FormattedApiInfo object
-    data = await api.get_parsed_api_data("100114514")
+    # data = await api.get_parsed_api_data("100114514")
     # print(data)
 
     # # The following shows how to export json text
